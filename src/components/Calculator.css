@@ -41,12 +41,19 @@ section {
 }
 
 #display {
-    background-color: rgb(27, 25, 25);
+    display: flex;
+    align-items: center;
     width: var(--rowWidth);
     height: 3em;
     border-radius: 10px;
     margin-bottom: 1em;
-} #display p {margin-left: 0.5em; font-size: 1.5em;}
+    background-color: rgb(27, 25, 25);
+}
+
+#display p {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}
 
 #equal {
     color: yellowgreen;

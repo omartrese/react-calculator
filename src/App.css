@@ -24,7 +24,7 @@ footer
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: black;
+  background-color: rgb(27, 25, 25);
   font-size: 2em;
 }
 
