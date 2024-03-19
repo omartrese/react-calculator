@@ -1,0 +1,104 @@
+:root {
+    --calcWidth: 500px;
+    --calcHeight: 700px;
+    --rowWidth: calc((var(--calcWidth) / 4 - 10px) * 4);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    background-color: rgb(43, 41, 41);
+    border-radius: 40px;
+    width: var(--calcWidth);
+    height: var(--calcHeight);
+}
+
+#calculator .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: calc(var(--calcWidth));
+    height: calc(var(--calcHeight));
+}
+
+#calculator .row button {
+    border-radius: 5%;
+
+    width: calc(var(--calcWidth) / 4 - 10px);
+    height: calc(var(--calcHeight) / 6 - 10px);
+    font-size: 1.5em;
+    margin: 1px;
+    text-align: center;
+
+}
+
+#display {
+    background-color: rgb(27, 25, 25);
+    width: var(--rowWidth);
+    height: 3em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+} #display p {margin-left: 0.5em; font-size: 1.5em;}
+
+#equal {
+    color: yellowgreen;
+}
+
+
+/* MOBILE STYLE */
+@media (max-width: 480px) {
+
+
+    section {
+        background-color: rgb(43, 41, 41);
+        height: 83vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #calculator {
+        --calcWidth: 375px;
+        --calcHeight: 76vh;
+        margin-bottom: 5em;
+        border-radius: 0;
+    }
+
+    #calculator .container {
+
+        display: flex;
+        margin-inline: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: calc(var(--calcWidth));
+        height: calc(var(--calcHeight));
+    }
+
+    #calculator .row button {
+        border-radius: 5%;
+
+        width: calc(var(--calcWidth) / 4 - 4px);
+        height: calc(var(--calcHeight) / 6 - 4px);
+        font-size: 1.5em;
+        margin: 1px;
+
+    }
+
+    #display {
+        width: 370px;
+        height: 2.5em;
+        display: flex;
+        align-items: center;
+        margin-top: 0.25em;
+    }
+
+}
