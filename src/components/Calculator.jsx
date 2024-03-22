@@ -6,7 +6,6 @@ import { Parser } from 'expr-eval'
 
 function Calculator() {
 
-    
     const [display, setDisplay] = useState('0');
     
     const deleteButton = () => display != '0' ? setDisplay(display.slice(0, -1)) : setDisplay('0');
@@ -35,6 +34,8 @@ function Calculator() {
     const calcDisplay = () => {
         try
         {
+            if (!isNaN(display)) return;
+            
             const parser = new Parser();
             const expr = parser.parse(display);
             console.log(expr.evaluate());
