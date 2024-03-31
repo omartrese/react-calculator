@@ -3,7 +3,8 @@
 A minimalist Calculator where you can do all basic operations.
 
 Made with `React` + `Vite`.
-Using of `expr-eval` npm library to evaluate all maths expressions.
+
+Using of [expr-eval](https://www.npmjs.com/package/expr-eval) npm library to evaluate all maths expressions.
 
 
 # Set-Up Development Environment
